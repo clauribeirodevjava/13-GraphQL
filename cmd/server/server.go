@@ -9,7 +9,6 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/clauribeirodevjava/13-GraphQL.git/graph"
-	"github.com/clauribeirodevjava/13-GraphQL.git/graph/internal/database"
 )
 
 const defaultPort = "8080"
