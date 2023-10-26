@@ -29,7 +29,6 @@ func main() {
 	}
 	defer db.Close()
 	categoryDb := database.NewCategory(db)
-
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = defaultPort
