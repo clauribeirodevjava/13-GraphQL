@@ -1,4 +1,4 @@
-package categoryBO
+package database
 
 import (
 	"database/sql"
