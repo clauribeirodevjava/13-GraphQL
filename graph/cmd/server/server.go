@@ -9,7 +9,7 @@ import (
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
 	"github.com/clauribeirodevjava/13-GraphQL.git/graph"
-	
+	"github.com/clauribeirodevjava/13-GraphQL.git/graph/internal/database"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -32,8 +32,8 @@ func main() {
 	}
 	defer db.Close()
 
-	categoryDb := database.
-	courseDb := categoryBO.NewCourse(db)
+	categoryDb := database.NewCategory(db)
+	courseDb := database.NewCourse(db)
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = defaultPort
