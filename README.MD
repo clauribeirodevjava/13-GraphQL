@@ -2,7 +2,7 @@
 
 ## Gerando o Esqueleto do servidor graphiQL
 
-Entrar no site
+*Entrar no site*
 
 
 [https://gqlgen.com/](https://gqlgen.com/)
