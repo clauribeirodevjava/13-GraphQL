@@ -8,8 +8,8 @@ import (
 
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
-	"github.com/clauribeirodevjava/13-GraphQL.git/graph"
-	"github.com/clauribeirodevjava/13-GraphQL.git/graph/internal/database"
+	"github.com/clauribeirodevjava/13-GraphQL/graph"
+	"github.com/clauribeirodevjava/13-GraphQL/graph/internal/database"
 
 	_ "github.com/go-sql-driver/mysql"
 )
@@ -32,16 +32,16 @@ func main() {
 	}
 	defer db.Close()
 
-	categoryDb := database.NewCategory(db)
-	courseDb := database.NewCourse(db)
+	Category := database.NewCategory(db)
+	Course := database.NewCourse(db)
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = defaultPort
 	}
 
 	srv := handler.NewDefaultServer(graph.NewExecutableSchema(graph.Config{Resolvers: &graph.Resolver{
-		CategoryDB: categoryDb,
-		CourseDB:   courseDb,
+		CategoryField: Category,
+		CourseField:   Course,
 	}}))
 
 	http.Handle("/", playground.Handler("GraphQL playground", "/query"))

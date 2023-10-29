@@ -1,4 +1,4 @@
-module github.com/clauribeirodevjava/13-GraphQL.git
+module github.com/clauribeirodevjava/13-GraphQL
 
 go 1.21.0
 

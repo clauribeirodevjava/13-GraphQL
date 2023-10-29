@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"github.com/clauribeirodevjava/13-GraphQL.git/graph/internal/database"
+	"github.com/clauribeirodevjava/13-GraphQL/graph/internal/database"
 )
 
 // This file will not be regenerated automatically.
@@ -9,6 +9,6 @@ import (
 // It serves as dependency injection for your app, add any dependencies you require here.
 
 type Resolver struct {
-	CategoryDB *database.Category
-	CourseDB   *database.Course
+	CategoryField *database.Category
+	CourseField   *database.Course
 }
