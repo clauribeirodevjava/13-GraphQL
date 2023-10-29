@@ -1,4 +1,4 @@
-# GraphQL
+# GraphQL ![Logo do GitHub](https://github.com/logo.png)
 
 ## Gerando o Esqueleto do servidor graphiQL
 
