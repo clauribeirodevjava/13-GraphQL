@@ -11,26 +11,28 @@
 ```
 printf '// +build tools\npackage tools\nimport (_ "github.com/99designs/gqlgen"\n _ "github.com/99designs/gqlgen/graphql/introspection")' | gofmt > tools.go 
 ```
+```
 go mod tidy 	
+```
+**Initialise gqlgen config and generate models**
+```go run github.com/99designs/gqlgen init```
 
-Initialise gqlgen config and generate models
-go run github.com/99designs/gqlgen init
-
-Start the graphql server
+**Start the graphql server**
+```
 go run server.go
+```
+
+**Gerar schemas Graphql**
 
 
-Gerar schemas Graphql
+# Criar os esquemas:
+
+```go run github.com/99designs/gqlgen generate```
+
+## Separar os models para poder gerar os relacionamentos :
 
 
-Criar os esquemas:
-
-go run github.com/99designs/gqlgen generate
-
-Separar os models para poder gerar os relacionamentos :
-
-
-category.go
+**category.go**
 package model
 ```go
 type Category struct {
@@ -52,6 +54,6 @@ type Course struct {
 }
 ```
 
-Implementar os BDS :
+**Implementar os BDS :**
 
-Implementar Resolvers:
+**Implementar Resolvers:**
