@@ -1,4 +1,4 @@
-# GraphQL <img src="https://blog.golang.org/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg" width="100" height="100">
+# GraphQL <img src="https://ih1.redbubble.net/image.520470372.9907/raf,750x1000,075,t,oatmeal_heather.u4.jpg" width="100" height="100">
 
 ## Gerando o Esqueleto do servidor graphiQL
 
