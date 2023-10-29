@@ -32,13 +32,13 @@ Separar os models para poder gerar os relacionamentos :
 
 category.go
 package model
-
+```
 type Category struct {
     ID          string  `json:"id"`
     Name        string  `json:"name"`
     Description *string `json:"description,omitempty"`
 }
-
+```
 
 
 	course.go
