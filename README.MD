@@ -33,8 +33,9 @@ go run server.go
 
 
 **category.go**
-package model
 ```go
+package model
+
 type Category struct {
     ID          string  `json:"id"`
     Name        string  `json:"name"`
