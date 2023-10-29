@@ -1,11 +1,11 @@
-GraphQL
+#GraphQL
 
-Gerando o Esqueleto do servidor graphiQL
+##Gerando o Esqueleto do servidor graphiQL
 
 Entrar no site
 
 
-https://gqlgen.com/
+[https://gqlgen.com/](https://gqlgen.com/)
 
 Add github.com/99designs/gqlgen to your project’s tools.go 
 
