@@ -41,7 +41,7 @@ type Category struct {
 ```
 
 
-	course.go
+course.go
 package model
 
 type Course struct {
