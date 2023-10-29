@@ -42,6 +42,7 @@ type Category struct {
 
 
 course.go
+```go
 package model
 
 type Course struct {
@@ -49,7 +50,7 @@ type Course struct {
     Name        string  `json:"name"`
     Description *string `json:"description,omitempty"`
 }
-
+```
 
 Implementar os BDS :
 
