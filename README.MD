@@ -1,4 +1,4 @@
-# GraphQL ![Logo do GitHub](https://github.com/logo.png)
+# GraphQL <img src="https://blog.golang.org/go-brand/Go-Logo/SVG/Go-Logo_Aqua.svg" width="100" height="100">
 
 ## Gerando o Esqueleto do servidor graphiQL
 
