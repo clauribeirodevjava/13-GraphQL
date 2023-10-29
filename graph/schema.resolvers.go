@@ -6,7 +6,6 @@ package graph
 
 import (
 	"context"
-	"fmt"
 
 	"github.com/clauribeirodevjava/13-GraphQL/graph/model"
 )
@@ -30,7 +29,15 @@ func (r *categoryResolver) Courses(ctx context.Context, obj *model.Category) ([]
 
 // Category is the resolver for the category field.
 func (r *courseResolver) Category(ctx context.Context, obj *model.Course) (*model.Category, error) {
-	panic(fmt.Errorf("not implemented: Category - category"))
+	category, err := r.CategoryField.FindByCourseId(obj.ID)
+	if err != nil {
+		return nil, err
+	}
+	return &model.Category{
+		ID:          category.ID,
+		Name:        category.Name,
+		Description: &category.Description,
+	}, nil
 }
 
 // CreateCategory is the resolver for the createCategory field.
@@ -111,3 +118,4 @@ type mutationResolver struct{ *Resolver }
 type queryResolver struct{ *Resolver }
 
 //alteração 1
+//alteração 2
