@@ -7,10 +7,10 @@
 
 [https://gqlgen.com/](https://gqlgen.com/)
 
-Add github.com/99designs/gqlgen to your project’s tools.go 
-
+**Add github.com/99designs/gqlgen to your project’s tools.go**
+```
 printf '// +build tools\npackage tools\nimport (_ "github.com/99designs/gqlgen"\n _ "github.com/99designs/gqlgen/graphql/introspection")' | gofmt > tools.go 
-
+```
 go mod tidy 	
 
 Initialise gqlgen config and generate models
